@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  background: #000;
+  width: 100%;
+  height: 100%;
+}
+
+.main {
+  background: #fff;
+  width: 100%;
+}
+
+/* Header Styles */
+.main .main__header {
+  display: flex;
+  flex-direction: column;
+}
+
+.main__header .main__header__title {
+  font: 700 1.5rem "PT Serif", sans-serif;
+  margin: 5rem 1rem 3rem 1rem;
+}
+
+.main__header .main__header__description {
+  font-family: "Poppins", sans-serif;
+  margin: 0 1rem 3rem 1rem;
+}
+
+.main__header .main__header__description .main__header__description__content {
+  margin-top: 1rem;
+}
+
+/* Main Content Styles */
+
+.main__content .main__content__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.main__content__row .main__content__row__user {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.main__content__row .main__content__row__user--low {
+  margin-top: 8.5rem;
+}
+
+.main__content__row__user .main__content__row__user__personal {
+  width: 100%;
+  display: flex;
+}
+
+.main__content__row__user .main__content__row__user__name {
+  margin-top: 1rem;
+}
+
+.main__content__row__user__personal .main__content__row__user__personal__duty {
+  font: 400 0.85rem "PT Serif", sans-serif;
+  writing-mode: vertical-rl;
+}
+
+.main__content__row__user__personal .main__content__row__user__personal__img {
+  width: 100%;
+  height: 100%;
+}
+
+.main__content__row__user__name .main__content__row__user__name__content {
+  font: 600 1.125rem "Poppins", sans-serif;
+}
+
+/* Footer Styles */
+.main__footer {
+  color: #bdbdbd;
+  margin-top: 8rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  font: 700 0.9rem Montserrat, sans-serif;
+}
+
+@media (min-width: 40rem) {
+  /* Header Styles */
+  .main .main__header {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 8rem 13rem 0 13rem;
+  }
+  .main__header .main__header__title {
+    width: 60%;
+    margin: 0;
+  }
+  .main__header .main__header__description {
+    width: 40%;
+    margin: 0;
+  }
+
+  .main__header .main__header__description .main__header__description__title {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+
+  .main__header .main__header__description .main__header__description__content {
+    font-size: 1.1rem;
+    font-weight: 400;
+  }
+
+  /* Content Styles */
+
+  .main__content .main__content__row {
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 13rem;
+  }
+  .main__content__row .main__content__row__user {
+    width: 30%;
+  }
+
+  .main__content__row__user__personal .main__content__row__user__personal__img {
+    width: 90%;
+  }
+
+  .main__content__row__user__personal
+    .main__content__row__user__personal__duty {
+    width: 10%;
+  }
+
+  .main__content__row .main__content__row__user {
+    margin-top: 0;
+  }
+
+  .main__content__row .main__content__row__user--second {
+    margin-top: 14rem;
+  }
+
+  .main__content__row__user:nth-child(4),
+  .main__content__row__user:nth-child(6) {
+    margin-bottom: 6rem;
+  }
+
+  .main__content__row .main__content__row__user--fifth {
+    margin-top:8rem;
+  }
+}
